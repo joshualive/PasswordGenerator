@@ -17,8 +17,6 @@ function displayNewPassword () {
 
 /* Your solution code goes here ... */
 
-
-
 // Generate ASCII to arrays
 const LOWER_ALPHA = []
 for (let i = 97; i < 123; i++) {
@@ -77,11 +75,11 @@ function generatePassword (criteria) {
   criteria.numerics && REQS.push(NUMBERS)
   criteria.symbols && REQS.push(SPECIAL_CHAR)
   for (let i = 0; i < criteria.length; i++) {
-    const temp = Math.floor(Math.random() * REQS.length)
-    const LENGTH = REQS[temp].length
-    const temp2 = Math.floor(Math.random() * LENGTH)
-    const temp3 = REQS[temp][temp2]
-    password += temp3
+    const REQS_NUMBER = Math.floor(Math.random() * REQS.length)
+    const LENGTH = REQS[REQS_NUMBER].length
+    const LENGTH_NUMBER = Math.floor(Math.random() * LENGTH)
+    const RESULT = REQS[REQS_NUMBER][LENGTH_NUMBER]
+    password += RESULT
   }
   return password
 }
