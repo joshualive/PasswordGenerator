@@ -6,6 +6,8 @@ To fill my arrays for the criteria I used `String.fromCharCode` to access ASCII 
 
 For the `getCriteria` function I used a do-while loop instead of a for loop to ensure the user input of the desired password length was a digit, and between the required 8-128 length. If it did not meet those requirements, we ignore the incorrect input, and prompt the user again with the length question.
 
+https://joshualive.github.io/PasswordGenerator/
+
 ## User Story
 
 ```
